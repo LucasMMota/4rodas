@@ -1,0 +1,306 @@
+/*
+Theme Name: 4Rodas by Lucas
+Author: Lucas Fonseca
+Description: Tema para o teste da Abril
+Version: 1.4
+*/
+@import url("/wp-content/themes/4rodas/assets/bootstrap/css/bootstrap.css");
+@import url("/wp-content/themes/4rodas/assets/font-awesome/css/font-awesome.css");
+
+body {
+    padding: 5px;
+    background-color: #EAE5E5;
+}
+
+header {
+    background-color: #ED1C24;
+    height: 90px;
+    margin-bottom: 3px;
+    padding: 20px 0 0 20px;
+}
+
+nav {
+    background-color: #0f0f0f;
+    height: 30px;
+}
+
+.menu-principal a {
+    color: #FFF;
+}
+
+.pesquisar {
+    background-color: #FFF;
+    margin-top: 8px;
+    padding-left: 10px;
+}
+
+.pesquisar i {
+    font-size: 17px;
+    color: #8B8B8B;
+}
+
+.pesquisar input {
+    border: 0px;
+    width: 150px;
+    height: 35px;
+}
+
+.mais-acessados > div {
+    height: 30px;
+}
+
+.mais-acessados {
+    margin-bottom: 5px;
+}
+
+.mais-acessados, .mais-acessados div {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.mais-acessados > div, .mais-acessados > div > span {
+    background-color: #ED1C24;
+}
+
+.mais-acessados-triangulo {
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    height: 21px;
+    width: 21px;
+    position: absolute;
+}
+
+.mais-acessados-triangulo.triangulo1 {
+    background-color: #ED1C24;
+    left: 103px;
+    top: 4px;
+    z-index: 10;
+}
+
+.mais-acessados-triangulo.triangulo2 {
+    background-color: #0f0f0f;
+    left: 109px;
+    top: 4px;
+    z-index: 9;
+}
+
+.mais-acessados-triangulo.triangulo3 {
+    background-color: #ED1C24;
+    left: 114px;
+    top: 4px;
+    z-index: 8;
+}
+
+.mais-acessados-label {
+    padding-top: 5px;
+    padding-left: 10px !important;
+    color: #FFF;
+}
+
+.menu-principal {
+    list-style: none;
+    color: #FFF;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.menu-principal li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.menu-flag:after {
+    content: '❯';
+    font-weight: 100;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    position: absolute;
+    margin-left: 7px;
+}
+
+.mais-acessados nav ul {
+    list-style: none;
+}
+
+.mais-acessados nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-right: 30px;
+    margin-top: 4px;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.img-esquerda {
+    height: 520px;
+}
+
+.div-direita img {
+    height: 260px;
+    width: 100%;
+}
+
+.linha1 {
+    margin-bottom: 20px;
+}
+
+.img1, .img2, .img3 {
+    margin-top: 30px;
+    margin-right: 17px;
+    padding: 0;
+    width: 24%;
+}
+
+.img4 {
+    width: 24%;
+    padding: 0;
+    margin-top: 30px;
+    float: right;
+}
+
+.label-imgs {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    margin-left: 10px;
+}
+
+.desc-imgs {
+    margin-left: 10px;
+    color: #000;
+    font-weight: 600;
+}
+
+.link-imgs {
+    color: #ED1C24;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.botao-toggle {
+    float: right;
+    background-color: #fff;
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 35px;
+    padding-top: 18px;
+}
+
+.barra-toggle {
+    background-color: #000;
+    height: 10px;
+    margin-bottom: 10px;
+}
+
+.mais-acessados-links li a {
+    color: #FFF;
+}
+
+@media (max-width: 991px) {
+    header {
+        height: 170px;
+    }
+
+    header div img {
+        width: 67%;
+        margin-left: 30px;
+    }
+
+    .menu-principal, .pesquisar {
+        display: none;
+    }
+
+    .menu-principal li {
+        display: inherit;
+        line-height: 95px;
+        font-size: 40px;
+        border-bottom: solid 1px #8B1515;
+    }
+
+    .close-menu {
+        float: right;
+        font-size: 73px;
+        font-weight: 800;
+        font-family: cursive;
+        color: #FFF;
+        width: 95px;
+        height: 95px;
+        margin-right: 50px;
+        margin-top: 15px;
+    }
+
+    .img-esquerda {
+        height: auto;
+        width: 100%;
+    }
+
+    .linha2 img {
+        width: 100%;
+    }
+
+    .div-direita img {
+        height: auto;
+    }
+
+    .img1, .img2, .img3, .img4 {
+        width: auto;
+        margin-right: 17px;
+        float: none;
+    }
+
+    .close-menu {
+        display: none;
+    }
+
+    .container-menu-principal {
+        top: 120px;
+    }
+
+    .pesquisar-xs i {
+        font-size: 52px;
+        color: #fff;
+    }
+
+    .pesquisar-xs input {
+        border: 0px;
+        width: 100%;
+        height: 90px;
+        font-size: 50px;
+        padding-left: 25px;
+        background-color: #ED1C24;
+        border: solid 0px;
+        border-bottom-width: 5px;
+        border-bottom-color: #FFF;
+    }
+}
+
+@media (width: 1024px) {
+    .pesquisar input {
+        width: 100px;
+    }
+
+    .menu-principal {
+        padding-left: 0;
+    }
+
+    .menu-principal li {
+        font-size: 9px;
+    }
+
+    .img4 {
+        width: 22%;
+    }
+
+    .logo {
+        width: 145px;
+    }
+}
